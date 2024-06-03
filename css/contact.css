@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #081b29;
+    color: #ededed;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    color: #ededed;
+    text-decoration: none;
+}
+
+.navbar a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ededed;
+    text-decoration: none;
+    margin-left: 45px;
+    transition: .4s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+
+}
+
+
+.contact {
+    margin-top: 100px;
+    height: 100vh;
+    padding: 0 10%;
+    width: 100vw;
+    text-align: center;
+}
+
+
+
+.contact h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.contact form{
+    width: 600px;
+    text-align: center;
+    margin-left: 300px;
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field{
+    width: 49%;
+}
+.field .item {
+    width: 100%;
+    padding: 18px;
+    border: 2px solid #00abf0;
+    background: transparent;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0 ;
+}
+
+.field .item::placeholder{
+    color: rgba(255, 255, 255, 0.4);
+} 
+
+
+form .textarea-field .item {
+    resize: none;
+
+
+}
+
+form button{
+    margin-top: 10px;
+    padding: 12px 32px;
+    background: #00abf0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form button:hover{
+    color: #ededed;
+}
+
+.socials {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 30px;
+    width: 250px;
+}
+
+.socials a{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    background: transparent;
+    color: #00abf0;
+}
